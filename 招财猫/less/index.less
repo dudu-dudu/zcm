@@ -1,0 +1,258 @@
+@import "z.less";
+@import "public.less";
+
+
+
+
+.header{
+    
+    display: flex;
+    .bgc(#fa3433);
+    .h(47);
+    .flex(sb);
+    .pl(8);
+    .pr(15);
+    h1{
+        .lh(23);
+        a{
+            color: #fff;
+            .fs(15);
+            display: flex;
+            span{
+              .lh(23);
+              .bg-m("../img/logo.png",center,center);
+              .bgs(22,23);
+              .w(22);
+              .h(23);  
+              .db(); 
+              .mr(6); 
+            }
+        }     
+    }
+    div{
+        color: #fff; 
+        .h(23);
+        a{
+          color: #fff;  
+          .fs(15);
+        }
+    }
+}
+.nav{
+    background-color: #fff;
+    .flex(sa);
+    .h(44);
+    a{
+        .fs(12);
+    }
+    .current{
+        color:#ff3636;
+    }
+}
+
+
+.about-us{
+    background-color: #fff;
+    .h(100);
+    .flex(sa);
+    .bb(1,solid,#eee);
+    li{
+        
+    }
+    .bgc4098EF{background-color: #4098EF;}
+    .bgcFB6360{background-color: #FB6360;}
+    .bgc41C9B1{background-color: #41C9B1;}
+    .bgcFFAE27{background-color: #FFAE27;}
+    i{
+        .b-r(17);
+        .mb(5); 
+        color: #fff;
+        .w(45);.h(45);.lh(45);
+        text-align: center;
+        display: block;
+       .bc();
+       .fs(24); 
+       
+    }
+}
+.hot{
+    
+    .pl(12);
+    .pr(12);
+    .hot-top{
+        .flex(sb);
+        .h(95);
+        .fs(15);
+        .h(44.5);
+        i{
+          color: #FF0000;
+          .mr(10);  
+        }
+        p{
+            color: #9a9b9c;
+        }
+    }
+    article{
+        background-color: #fff;
+        .mb(10);
+        .pl(5);
+        .pr(5);
+        box-sizing: border-box;
+        .pt(12);
+        .h(122.5);
+        .b();
+        .data-title{
+            display: flex;
+            h4{
+                .fs(14);
+                color: #494848;
+                margin-right:auto ;
+            }
+            em{
+                .w(42);
+                .h(15);.lh(15);text-align: center;
+                background-color: #FFAB37;
+                color: #fff;
+                .fs(14);
+//             .mr{3};
+            }
+            strong{
+                .w(16);
+                .h(15);.lh(15);
+                color: #fff;
+                .ml(5);
+                background-color: #FF7404;
+            }
+        }
+        
+        .data{
+            .mt(10);
+            .flex(sa);
+            .data1{
+                    .fs(12);
+                    color:#FF7900 ;
+                span{
+                    .fs(19);
+                    color:#FB4034 ; 
+                    
+                }
+            }
+            .data2{
+                  .fs(15);
+                    color:#9a9b9c ; 
+                span{
+                      .fs(14);
+                    color:#3d3c3c ; 
+                }
+                p{
+                      .fs(15);
+                    color:#9a9b9c ; 
+                }
+            }
+            .data3{
+                img{
+                .w(77);
+                .h(71); 
+                }
+                .w(77);
+                .h(71);
+                overflow: hidden;
+            }
+        }
+    }
+    article:last-child{
+        .mb(0);
+    }
+}
+
+.news{
+    background-color: #fff;
+    .bt();
+    .bb();
+    .pl(12);
+    .pr(12);
+    .pb(18);
+    
+    li{
+        .mt(18);
+        display: flex;
+        .news-img{
+            flex: 0 0 auto;           
+            .w(55);
+            .h(55);
+            overflow: hidden;
+            .b-r(10);
+            .mr(10);
+            img{
+            .w(55);
+            .h(55); 
+            }
+        }
+        .news-detail{
+            flex: 1 1 auto;
+            .h(55);
+            h5{
+                .fs(13);
+                .mt(2);
+            }
+            p{
+                color:#9a9b9c;
+                .mt(10);
+                .flex(sb);
+                span{                   
+                    .w(155);
+                    .ellipsis-basic();
+                }
+                time{
+                }
+            }
+            
+        }
+    }
+}
+//轮播图
+.index-wrapper{
+    width: 100%;
+    .h(181);
+    background-color: #ccc;
+    
+             .swipe {
+              overflow: hidden;
+              visibility: hidden;
+              position: relative;
+              ul{
+                  position: absolute;
+                  .bottom(20);
+                  left:50%;
+                  .ml(-5);
+                 li{
+                    float: left;
+                   .w(8);
+                   .h(8);
+                   .b-r(4);
+                   background-color: #000;
+                   opacity: 0.5; 
+                   .mr(5);                 
+                 }
+                 .current{
+                   opacity: 1;
+                   background-color: #fff;
+                 } 
+              }
+            }
+            .swipe-wrap {
+              overflow: hidden;
+              position: relative;
+            }
+            .swipe-wrap > div {
+              float:left;
+              width:100%;
+              position: relative;
+            }
+            img{
+                width: 100%;
+                .h(181);
+            }
+            
+}
+

@@ -1,0 +1,140 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+fieldset,
+img {
+  border: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  display: block;
+}
+h1 {
+  font-weight: normal;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-family: "Microsoft Yahei", "微软雅黑";
+}
+@media screen and (width: 320px) {
+  html {
+    font-size: 85.333333333px;
+  }
+}
+@media screen and (width: 375px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (width: 414px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+body {
+  background-color: #F9F9F9;
+}
+.footer {
+  border-top: 0.01rem solid #eeeeee;
+  margin-top: 0.12rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 0.83rem;
+}
+.footer a {
+  color: #494848;
+  font-size: 0.14rem;
+}
+.footer p {
+  margin-top: 0.09rem;
+  color: #9a9b9c;
+  font-size: 0.13rem;
+}
